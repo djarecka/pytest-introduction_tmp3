@@ -63,6 +63,12 @@ jobs:
           file: "week2/test_prime_factors.py"
           search: "mark.parametrize"
 
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip setuptools
+          pip install pytest
+
+
       - name: Run the pytest
         run: pytest week2/test_prime_factors.py
 
