@@ -64,7 +64,7 @@ jobs:
           search: "mark.parametrize"
 
       - name: Run the pytest
-        run: python week2/test_prime_factors.py
+        run: pytest week2/test_prime_factors.py
 
 
   update_to_week3:
